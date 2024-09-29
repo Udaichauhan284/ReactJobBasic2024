@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Spinners from "./Spinners";
 
 const JobListings = ({ isHome }) => {
-  const apiURL = (isHome) ? "http://localhost:8001/jobs?_limit=3" : "http://localhost:8001/jobs"
+  const apiURL = (isHome) ? "/api/jobs?_limit=3" : "/api/jobs"
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
 
